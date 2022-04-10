@@ -69,5 +69,7 @@ namespace Homework
                               $"Координата вершины x - {topOfFigure.Item1}\n" +
                               $"Координата вершины y - {topOfFigure.Item2}\n");
         }
+
+        public abstract double GetSquare();
     }
 }

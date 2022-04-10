@@ -22,14 +22,14 @@ namespace Homework
         /// Возвращает радиус окружности
         /// </summary>
         /// <returns></returns>
-        public double GetRadius()
+        public override double GetSquare()
         {
             return Math.PI * Math.Sqrt((center.Item1 - topOfFigure.Item1) + (center.Item2 - topOfFigure.Item2));
         }
 
         public override void ShowInfo()
         {
-            Console.WriteLine($"Радиус - {GetRadius()}");
+            Console.WriteLine($"Радиус - {GetSquare()}");
             base.ShowInfo();
         }
     }
